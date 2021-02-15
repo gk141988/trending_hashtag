@@ -7,8 +7,7 @@ public class Tester {
         final TrendingHashTagObservable observable = new TrendingHashTagObservable();
         final TrendingHashTagObserver observer = new TrendingHashTagObserver();
         observable.addObserver(observer);
-
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         while (true) {
             System.out.println("Enter your tweet here : \n");
